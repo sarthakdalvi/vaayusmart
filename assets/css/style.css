@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+body { font-family: 'Segoe UI', sans-serif; background-color: #0f0f0f; color: #fff; overflow-x: hidden;}
+
+.navbar .nav-link { color: #ccc; transition: color 0.3s ease; }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #ffab40; }
+
+.vaayu-logo{width: 150px;}
+
+/* #hero { background: linear-gradient(to right, #0f0f0f, #121f30); padding: 80px 0;} */
+#hero { background: url("../images/3bg.png") no-repeat center center; background-size: cover; position: relative; z-index: 1;}
+#hero::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to right, rgba(15, 15, 15, 0.3), rgba(18, 31, 48, 0.6)); z-index: -1;}
+.swiper{padding-bottom: 50px;}
+.swiper-slide p { text-align: center; font-size: 1.1rem; color: #ddd;}
+/* Custom pagination bullets (horizontal bars) */
+.swiper-pagination-bullet { width: 30px; height: 6px; background-color: #aaa; opacity: 0.5; 
+    border-radius: 4px; margin: 0 6px !important; transition: all 0.3s ease;}
+.swiper-pagination-bullet-active { background-color: #fff; opacity: 1;}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction{ bottom: 0;}
+
+.btn-primary { background-color: #007bff; border: none; transition: all 0.3s ease;}
+.btn-outline-light:hover { color: #000; background-color: #fff;}
+
+section { scroll-margin-top: 100px;}
+#about { background: linear-gradient(to bottom, #f8f9fa, #ffffff);}
+#about h2 { color: #0c1e3a;}
+#about p { font-size: 1.05rem; line-height: 1.7; color: #333;}
+
+#vision-mission { background: linear-gradient(to right, #0f0f0f, #1c1c1c);}
+#vision-mission h2 { font-size: 2.5rem; color: #fff;}
+#vision-mission p { font-size: 1.05rem; color: #ccc;}
+#vision-mission .bg-gradient { background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)); backdrop-filter: blur(4px); border-radius: 12px;}
+
+#why-vaayu { background: #f9f9f9;}
+#why-vaayu h2 { color: #0c1e3a;}
+#why-vaayu .border { border-color: #e0e0e0 !important;}
+#why-vaayu p { color: #444; font-size: 1.02rem;}
+/* Card hover animation */
+#why-vaayu .border {background: #fff;transition: transform 0.4s ease, box-shadow 0.4s ease;will-change: transform;}
+#why-vaayu .border:hover {transform: translateY(-10px) scale(1.02);box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);border-color: transparent;}
+
+/* Product Card */
+.product-card { overflow: hidden; border-radius: 12px; background-color: #111; padding: 10px; transition: transform 0.4s ease, box-shadow 0.4s ease;}
+.product-card img { width: 100%; height: auto; display: block; transition: transform 0.8s ease; transform-origin: center;}
+/* Spin effect on hover */
+.product-card:hover img { transform: rotateY(360deg);}
+/* Optional lift on hover */
+.product-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); }
+#collections h2 { color: #ffffff; }
+#collections p { color: #aaa; }
+.swiper-pagination-bullet { width: 30px; height: 6px; background-color: #777; border-radius: 4px; opacity: 0.5; margin: 0 6px !important; transition: 0.3s ease; }
+.swiper-pagination-bullet-active { background-color: #fff; opacity: 1;}
+
+.feature-box { background: rgba(255, 255, 255, 0.75); border: 1px solid #eee; border-radius: 16px; padding: 30px 20px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: all 0.3s ease;}
+.feature-box:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1);}
+.feature-box i { color: #007bff;}
+
+.glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; transition: all 0.3s ease; }
+.glass-card:hover { box-shadow: 0 0 25px rgba(0, 123, 255, 0.15); }
+#contact a:hover { text-decoration: underline; color: #fff; }
+
+footer a:hover { color: #ffab40; text-decoration: none; }
+footer input::placeholder { color: #bbb; }
+.download-store{ filter: invert(1); width: 150px; height: 100px; object-fit: contain; }
+
+.back-to-top { position: fixed; right: 20px; bottom: 20px; width: 44px; height: 44px; background: #007bff; color: #fff; font-size: 24px; border-radius: 50%; z-index: 999; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); }
+.back-to-top:hover { background: #0056b3; color: #fff; }
+
+
+/* Float animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+.float-image { animation: float 4s ease-in-out infinite; max-height: 320px; width: auto; margin: 0 auto; display: block;}
