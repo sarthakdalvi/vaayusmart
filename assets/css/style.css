@@ -25,9 +25,11 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #0f0f0f; color: #f
 .btn-outline-light:hover { color: #000; background-color: #fff;}
 
 section { scroll-margin-top: 100px;}
-#about { background: linear-gradient(to bottom, #f8f9fa, #ffffff);}
-#about h2 { color: #0c1e3a;}
-#about p { font-size: 1.05rem; line-height: 1.7; color: #333;}
+/* #about { background: linear-gradient(to bottom, #f8f9fa, #ffffff);} */
+#about { background: url("../images/8M.1028.jpg") no-repeat center center; background-size: cover; position: relative; z-index: 1;}
+#about::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(18, 31, 48, 0.6)); z-index: -1;}
+#about h2 { color: #ddd;}
+#about p { font-size: 1.05rem; line-height: 1.7; color: #ddd;}
 
 #vision-mission { background: linear-gradient(to right, #0f0f0f, #1c1c1c);}
 #vision-mission h2 { font-size: 2.5rem; color: #fff;}
